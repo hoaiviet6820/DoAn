@@ -40,7 +40,55 @@ namespace Lab05_ca3
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            
+            CPhieuThuePhong pt = new CPhieuThuePhong();
+            pt.MaPhieuThue = txtMaPT.Text;
+            pt.NgayBD = dtpNgayBD.Value;
+            pt.NgayKT = dtpNgayKT.Value;
+            pt.TenKH = txtTenKH.Text;
+
+            if (pt.NgayBD > pt.NgayKT)
+            {
+                MessageBox.Show("Nhap lai Ngay Bat Dau!");
+            }
+            else
+            {
+
+                if (radA.Checked == true)
+                {
+                    pt.LoaiPhong = KieuLoaiPhong.A;
+                }
+                else if (radB.Checked == true)
+                {
+                    pt.LoaiPhong = KieuLoaiPhong.B;
+                }
+                else if (radC.Checked == true)
+                {
+
+                    pt.LoaiPhong = KieuLoaiPhong.C;
+                }
+                else
+                {
+
+                    pt.LoaiPhong = KieuLoaiPhong.D;
+                }
+
+
+                if (timPTP(pt.MaPhieuThue) == null)
+                {
+
+                    dsPhieuThue.Add(pt);
+                    hienDSPhieuThuePhong();
+                }
+                else
+                {
+                    MessageBox.Show("Ma Phieu Thue: " + pt.MaPhieuThue + " da ton tai. Khong them duoc!");
+                }
+
+                txtMaPT.Text = "";
+
+                txtTenKH.Text = "";
+                radA.Checked = true;
+            }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
