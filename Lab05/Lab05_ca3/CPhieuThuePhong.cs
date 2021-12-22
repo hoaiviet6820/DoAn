@@ -8,8 +8,9 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Lab05_ca3
 {
-    [Serializable]
+    
     public enum KieuLoaiPhong {A,B,C,D}
+    [Serializable]
     public class CPhieuThuePhong
     {
         private string m_maphieu;

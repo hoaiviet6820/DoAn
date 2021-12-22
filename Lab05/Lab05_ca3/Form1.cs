@@ -228,15 +228,16 @@ namespace Lab05_ca3
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            dsPhieuThue = new List<CPhieuThuePhong>();
+            //dsPhieuThue = new List<CPhieuThuePhong>();
 
-            //if (readFile("dsPhieuThue.out") == true)
-            //{
-            //    hienDSPhieuThuePhong();
-            //}
-            //else {
-            //    MessageBox.Show("Khong The Doc File");
-            //}
+            if (readFile("dsPhieuThue.out") == true)
+            {
+                hienDSPhieuThuePhong();
+            }
+            else
+            {
+                MessageBox.Show("Khong The Doc File");
+            }
 
         }
 
