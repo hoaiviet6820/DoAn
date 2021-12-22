@@ -8,3 +8,13 @@ O:\WorkSpace\oop\Lab05_ca3\Lab05_ca3\obj\Debug\Lab05_ca3.csproj.GenerateResource
 O:\WorkSpace\oop\Lab05_ca3\Lab05_ca3\obj\Debug\Lab05_ca3.csproj.CoreCompileInputs.cache
 O:\WorkSpace\oop\Lab05_ca3\Lab05_ca3\obj\Debug\Lab05_ca3.exe
 O:\WorkSpace\oop\Lab05_ca3\Lab05_ca3\obj\Debug\Lab05_ca3.pdb
+O:\WorkSpace\oop\DoAnThayBang\DoAn\Lab05\Lab05_ca3\bin\Debug\Lab05_ca3.exe.config
+O:\WorkSpace\oop\DoAnThayBang\DoAn\Lab05\Lab05_ca3\bin\Debug\Lab05_ca3.exe
+O:\WorkSpace\oop\DoAnThayBang\DoAn\Lab05\Lab05_ca3\bin\Debug\Lab05_ca3.pdb
+O:\WorkSpace\oop\DoAnThayBang\DoAn\Lab05\Lab05_ca3\obj\Debug\Lab05_ca3.csproj.AssemblyReference.cache
+O:\WorkSpace\oop\DoAnThayBang\DoAn\Lab05\Lab05_ca3\obj\Debug\Lab05_ca3.Form1.resources
+O:\WorkSpace\oop\DoAnThayBang\DoAn\Lab05\Lab05_ca3\obj\Debug\Lab05_ca3.Properties.Resources.resources
+O:\WorkSpace\oop\DoAnThayBang\DoAn\Lab05\Lab05_ca3\obj\Debug\Lab05_ca3.csproj.GenerateResource.cache
+O:\WorkSpace\oop\DoAnThayBang\DoAn\Lab05\Lab05_ca3\obj\Debug\Lab05_ca3.csproj.CoreCompileInputs.cache
+O:\WorkSpace\oop\DoAnThayBang\DoAn\Lab05\Lab05_ca3\obj\Debug\Lab05_ca3.exe
+O:\WorkSpace\oop\DoAnThayBang\DoAn\Lab05\Lab05_ca3\obj\Debug\Lab05_ca3.pdb
