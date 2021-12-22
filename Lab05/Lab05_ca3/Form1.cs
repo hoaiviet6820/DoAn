@@ -162,22 +162,82 @@ namespace Lab05_ca3
         }
 
         public bool writeFile(string namef) {
-            return false;
+            try
+            {
+                FileStream f = new FileStream(namef, FileMode.Create);
+
+
+                if (f == null)
+                {
+                    return false;
+                }
+                else
+                {
+                    BinaryFormatter bf = new BinaryFormatter();
+                    bf.Serialize(f, dsPhieuThue);
+                    f.Close();
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public bool readFile(string namef) {
-            return false;
+            try
+            {
+                FileStream f = new FileStream(namef, FileMode.Open);
+                if (f == null)
+                {
+                    return false;
+                }
+                else
+                {
+                    BinaryFormatter bf = new BinaryFormatter();
+
+                    dsPhieuThue = bf.Deserialize(f) as List<CPhieuThuePhong>;
+                    f.Close();
+                    return true;
+                }
+
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
         }
 
         private void btnSaveFile_Click(object sender, EventArgs e)
         {
-            
+            bool check = writeFile("dsPhieuThue.out");
+
+
+            if (check == true)
+            {
+                MessageBox.Show("Luu thanh cong!");
+            }
+            else
+            {
+                MessageBox.Show("Khong the luu!");
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            dsPhieuThue = new List<CPhieuThuePhong>();
+            //dsPhieuThue = new List<CPhieuThuePhong>();
+
+            if (readFile("dsPhieuThue.out") == true)
+            {
+                hienDSPhieuThuePhong();
+            }
+            else
+            {
+                MessageBox.Show("Khong The Doc File");
+            }
 
         }
 
@@ -207,7 +267,10 @@ namespace Lab05_ca3
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            
+            if (MessageBox.Show("Ban co muon thoat chuong trinh khong?", "Thong Bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Close();
+            }
         }
     }
 }
